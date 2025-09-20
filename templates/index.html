@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paws Watch - Dashboard</title>
+  <style>
+    body { font-family: Arial; background:#f8fafc; text-align:center; padding:20px; }
+    .card { background:white; padding:20px; margin:10px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1); display:inline-block; width:200px; }
+    h1 { color:#2563eb; }
+    nav a { margin:10px; text-decoration:none; color:#2563eb; font-weight:bold; }
+  </style>
+</head>
+<body>
+  <h1>🐾 Paws Watch Rescue Dashboard</h1>
+  <p>Date: {{ date }}</p>
+  <nav>
+    <a href="/">Dashboard</a>
+    <a href="/dogs">Dogs</a>
+    <a href="/volunteers">Volunteers</a>
+    <a href="/reports">Reports</a>
+  </nav>
+
+  <div class="card">Total Dogs: {{ total }}</div>
+  <div class="card">Present: {{ present }}</div>
+  <div class="card">At Vet: {{ vet }}</div>
+  <div class="card">Adoption Event: {{ adoption }}</div>
+  <div class="card">Missing: {{ missing }}</div>
+</body>
+</html>

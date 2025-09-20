@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paws Watch - Reports</title>
+</head>
+<body>
+  <h1>Reports 📑</h1>
+  <p>Date: {{ date }}</p>
+  <ul>
+    {% for name, info in dogs.items() %}
+      <li>{{ name }} - {{ info.status }} (Volunteer: {{ info.volunteer }})</li>
+    {% endfor %}
+  </ul>
+  <a href="/">⬅ Back to Dashboard</a>
+</body>
+</html>

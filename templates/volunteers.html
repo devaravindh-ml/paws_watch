@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paws Watch - Volunteers</title>
+</head>
+<body>
+  <h1>Assign Volunteers 👩‍🦱</h1>
+  <p>Date: {{ date }}</p>
+  <form method="post">
+    {% for name, info in dogs.items() %}
+      <div>
+        <label>{{ name }}:</label>
+        <input type="text" name="{{ name }}" value="{{ info.volunteer }}">
+      </div>
+    {% endfor %}
+    <button type="submit">Save Assignments</button>
+  </form>
+  <a href="/">⬅ Back to Dashboard</a>
+</body>
+</html>
